@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ff4fa3">
+<meta name="description" content="Sunshine's Gift Package and Aesthetics. Beauty, gifts, cups, hair accessories and aesthetic essentials.">
+<title>Sunshine's Gift Package 💞✨</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --pink:#ff4fa3;
+  --hot:#ff2d8d;
+  --rose:#ff7fbc;
+  --baby:#ffd9ec;
+  --cream:#fff8fc;
+  --ink:#28131f;
+  --muted:#785568;
+  --glass:rgba(255,255,255,.48);
+  --line:rgba(255,255,255,.65);
+  --shadow:0 24px 70px rgba(145,27,91,.16);
+  --radius:28px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"DM Sans",system-ui,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 15% 10%,rgba(255,255,255,.95),transparent 28%),
+    radial-gradient(circle at 90% 25%,rgba(255,92,167,.18),transparent 30%),
+    linear-gradient(145deg,#fff7fb 0%,#ffe5f2 45%,#fff9fc 100%);
+  overflow-x:hidden;
+}
+button,a{font:inherit}
+button{border:0;cursor:pointer}
+a{text-decoration:none;color:inherit}
+
+body:before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    radial-gradient(circle at 70% 75%,rgba(255,79,163,.08),transparent 25%),
+    radial-gradient(circle at 10% 90%,rgba(255,255,255,.7),transparent 30%);
+}
+
+.hero{
+  min-height:88vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:24px 18px 42px;
+  overflow:hidden;
+  isolation:isolate;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:-3;
+  background:
+    linear-gradient(180deg,rgba(35,10,25,.08),rgba(35,10,25,.18) 42%,rgba(35,10,25,.78)),
+    url("assets/background-01.webp") center/cover no-repeat;
+  transform:scale(1.03);
+}
+.hero:after{
+  content:"";
+  position:absolute;inset:0;z-index:-2;
+  background:linear-gradient(135deg,rgba(255,125,190,.12),transparent 50%,rgba(255,49,139,.12));
+}
+.hero-top{
+  position:absolute;top:18px;left:18px;right:18px;
+  display:flex;justify-content:space-between;align-items:center;z-index:3;
+}
+.logo-mini{
+  width:48px;height:48px;border-radius:50%;
+  object-fit:cover;background:rgba(255,255,255,.78);
+  border:1px solid rgba(255,255,255,.85);
+  box-shadow:0 10px 35px rgba(0,0,0,.18);
+  backdrop-filter:blur(12px);
+}
+.status-pill{
+  color:#fff;background:rgba(35,9,24,.38);
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:999px;padding:10px 14px;
+  backdrop-filter:blur(16px);
+  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+}
+.hero-content{width:min(720px,100%);margin:auto 0 0}
+.kicker{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 13px;border:1px solid rgba(255,255,255,.42);
+  border-radius:999px;color:#fff;background:rgba(255,255,255,.12);
+  backdrop-filter:blur(14px);font-size:11px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;
+}
+.brand{
+  font-family:"Dancing Script",cursive;
+  color:#fff;font-size:clamp(47px,13vw,86px);
+  line-height:.9;font-weight:700;
+  text-shadow:0 5px 28px rgba(91,0,48,.42);
+  max-width:680px;
+}
+.hero-sub{
+  margin-top:18px;color:#fff8fc;
+  font-size:14px;line-height:1.7;max-width:510px;
+  text-shadow:0 2px 12px rgba(0,0,0,.28);
+}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{
+  min-height:48px;padding:0 18px;border-radius:999px;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:700;font-size:13px;
+}
+.btn-primary{
+  color:#fff;background:linear-gradient(135deg,#ff3190,#ff72b6);
+  box-shadow:0 14px 30px rgba(255,45,141,.28);
+}
+.btn-glass{
+  color:#fff;background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.42);
+  backdrop-filter:blur(14px);
+}
+.hero-glow{
+  position:absolute;width:220px;height:220px;border-radius:50%;
+  right:-90px;top:28%;background:rgba(255,83,164,.32);
+  filter:blur(50px);z-index:-1;
+}
+
+.shell{width:min(1180px,100%);margin:auto;padding:0 16px}
+.section{padding:54px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:22px}
+.eyebrow{
+  color:var(--hot);font-size:11px;font-weight:800;
+  letter-spacing:.15em;text-transform:uppercase;margin-bottom:7px;
+}
+.section-title{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(35px,8vw,55px);line-height:.95;
+}
+.section-copy{font-size:13px;line-height:1.65;color:var(--muted);max-width:510px;margin-top:10px}
+
+.category-wrap{
+  display:flex;gap:9px;overflow:auto;padding:3px 2px 12px;
+  scrollbar-width:none;
+}
+.category-wrap::-webkit-scrollbar{display:none}
+.cat{
+  flex:0 0 auto;padding:10px 15px;border-radius:999px;
+  border:1px solid rgba(255,79,163,.18);
+  background:rgba(255,255,255,.58);color:#713653;
+  box-shadow:0 7px 20px rgba(145,27,91,.06);
+  font-size:12px;font-weight:700;transition:.25s;
+}
+.cat.active,.cat:hover{
+  color:#fff;background:linear-gradient(135deg,var(--hot),#ff7dbb);
+  box-shadow:0 10px 25px rgba(255,45,141,.2);
+}
+
+.catalog{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+}
+.card{
+  position:relative;overflow:hidden;border-radius:24px;
+  min-height:265px;background:var(--glass);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  cursor:pointer;transition:transform .3s,box-shadow .3s;
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 28px 75px rgba(145,27,91,.22)}
+.card-img{
+  width:100%;height:210px;display:block;object-fit:cover;
+  background:
+    radial-gradient(circle at 30% 20%,#fff,transparent 20%),
+    linear-gradient(135deg,#ffd3e8,#ff7ebc);
+}
+.card-overlay{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 13px 13px;
+  background:linear-gradient(transparent,rgba(35,9,24,.88));
+  color:#fff;
+}
+.card-name{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:700}
+.card-meta{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:4px}
+.card-price{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#ffd3e8}
+.card-arrow{
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
+}
+
+.feature{
+  margin-top:16px;padding:22px;border-radius:30px;
+  background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(255,224,239,.58));
+  border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow);
+  backdrop-filter:blur(18px);
+}
+.feature-inner{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}
+.feature-image{
+  min-height:250px;border-radius:23px;
+  background:url("assets/background-02.webp") center/cover;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.4);
+}
+.feature h3{font-family:"Dancing Script",cursive;font-size:39px;line-height:1}
+.feature p{font-size:13px;color:var(--muted);line-height:1.7;margin:12px 0 17px}
+
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.info{
+  padding:20px;border-radius:24px;
+  background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.72);
+  backdrop-filter:blur(16px);box-shadow:0 15px 40px rgba(145,27,91,.08);
+}
+.info-icon{font-size:23px;margin-bottom:12px}
+.info h4{font-family:"Cormorant Garamond",serif;font-size:24px}
+.info p{font-size:12px;line-height:1.6;color:var(--muted);margin-top:5px}
+
+footer{
+  padding:35px 16px 45px;text-align:center;color:#85556d;font-size:11px;
+}
+.footer-brand{font-family:"Dancing Script",cursive;font-size:29px;color:var(--hot)}
+
+.modal{
+  position:fixed;inset:0;z-index:50;display:none;
+  align-items:flex-end;justify-content:center;
+  background:rgba(32,6,20,.48);backdrop-filter:blur(10px);
+}
+.modal.show{display:flex}
+.modal-box{
+  width:min(620px,100%);max-height:92vh;overflow:auto;
+  background:linear-gradient(145deg,rgba(255,250,253,.96),rgba(255,226,239,.94));
+  border:1px solid rgba(255,255,255,.9);
+  border-radius:32px 32px 0 0;
+  box-shadow:0 -25px 80px rgba(62,0,35,.25);
+  animation:sheet .32s ease;
+}
+@keyframes sheet{from{transform:translateY(50px);opacity:0}to{transform:none;opacity:1}}
+.modal-media{
+  position:relative;height:310px;background:#ffd5e8;
+}
+.modal-media img{width:100%;height:100%;object-fit:cover}
+.close{
+  position:absolute;right:14px;top:14px;width:42px;height:42px;border-radius:50%;
+  background:rgba(255,255,255,.75);backdrop-filter:blur(12px);
+  font-size:23px;color:#40182c;
+}
+.modal-body{padding:22px 20px 25px}
+.modal-category{color:var(--hot);font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.modal-title{font-family:"Cormorant Garamond",serif;font-size:38px;line-height:1;margin:6px 0}
+.modal-desc{font-size:13px;color:var(--muted);line-height:1.7;margin:9px 0 17px}
+.variant-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#8a526d}
+.variants{display:flex;gap:8px;overflow:auto;margin:9px 0 18px;padding-bottom:4px}
+.variant{
+  flex:0 0 auto;padding:9px 13px;border-radius:999px;
+  border:1px solid rgba(255,79,163,.2);background:rgba(255,255,255,.68);
+  color:#703450;font-size:11px;font-weight:700;
+}
+.variant.selected{background:#ff4fa3;color:#fff;border-color:#ff4fa3}
+.order-btn{width:100%;min-height:54px;border-radius:18px;color:#fff;font-weight:800;
+  background:linear-gradient(135deg,#ff2d8d,#ff78b9);
+  box-shadow:0 15px 32px rgba(255,45,141,.24);
+}
+.small-note{text-align:center;font-size:10px;color:#9b6981;margin-top:9px}
+
+.empty{grid-column:1/-1;padding:40px 20px;text-align:center;color:var(--muted)}
+
+.reveal{opacity:0;transform:translateY(18px);transition:.65s ease}
+.reveal.visible{opacity:1;transform:none}
+
+@media(min-width:700px){
+  .hero{min-height:92vh;padding:35px 5vw 65px}
+  .hero-top{left:5vw;right:5vw;top:25px}
+  .catalog{grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+  .card{min-height:340px}
+  .card-img{height:290px}
+  .modal{align-items:center;padding:20px}
+  .modal-box{border-radius:32px;max-height:88vh}
+}
+@media(max-width:560px){
+  .feature-inner{grid-template-columns:1fr}
+  .feature-image{min-height:210px}
+  .info-grid{grid-template-columns:1fr}
+  .section{padding:45px 0}
+}
+
+.gallery-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:42px;height:42px;border-radius:50%;
+  color:#fff;background:rgba(42,8,28,.42);
+  border:1px solid rgba(255,255,255,.5);
+  backdrop-filter:blur(12px);font-size:30px;line-height:1;
+  z-index:3;
+}
+.gallery-prev{left:12px}
+.gallery-next{right:12px}
+.image-count{
+  position:absolute;bottom:13px;left:50%;transform:translateX(-50%);
+  color:#fff;background:rgba(42,8,28,.42);
+  border:1px solid rgba(255,255,255,.38);
+  backdrop-filter:blur(10px);border-radius:999px;
+  padding:6px 10px;font-size:10px;font-weight:800;
+}
+.dm-price{
+  display:inline-flex;padding:9px 13px;border-radius:999px;
+  background:#ffe0ef;color:#d5287c;
+  font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  margin-bottom:17px;
+}
+
+</style>
+</head>
+
+<body>
+<header class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-top">
+    <img class="logo-mini" src="assets/logo.webp" alt="Sunshine's logo">
+    <div class="status-pill">Adamawa • Delivery Available</div>
+  </div>
+
+  <div class="hero-content">
+    <div class="kicker">💞 Gift • Beauty • Aesthetics</div>
+    <h1 class="brand">Sunshine's Gift Package<br>& Aesthetics</h1>
+    <p class="hero-sub">
+      Pretty little things, beauty essentials, thoughtful gifts and aesthetic finds,
+      carefully selected for your everyday glow.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#catalog">Explore Collection ✨</a>
+      <a class="btn btn-glass" href="#" id="heroWhatsapp">Chat on WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section" id="catalog">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">The collection</div>
+        <h2 class="section-title">Shop the pretty things.</h2>
+        <p class="section-copy">Browse the catalogue, tap anything you like, choose a variant where available, then send the order straight to Sunshine on WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="category-wrap reveal" id="categories"></div>
+    <div class="catalog reveal" id="productGrid"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="feature reveal">
+      <div class="feature-inner">
+        <div class="feature-image"></div>
+        <div>
+          <div class="eyebrow">Made for gifting</div>
+          <h3>Something pretty for someone special.</h3>
+          <p>Gift packages can be prepared for different occasions. Tap the gift package collection and message Sunshine for available packages and current prices.</p>
+          <button class="btn btn-primary" onclick="openProduct('gift-packages')">View Gift Packages 🎁</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">How it works</div>
+        <h2 class="section-title">Simple. Pretty. Direct.</h2>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <article class="info reveal">
+        <div class="info-icon">🛍️</div>
+        <h4>Choose</h4>
+        <p>Browse the catalogue and open any product for its images, variants and details.</p>
+      </article>
+      <article class="info reveal">
+        <div class="info-icon">💬</div>
+        <h4>Message</h4>
+        <p>Your selected product is automatically written into the WhatsApp message.</p>
+      </article>
+      <article class="info reveal">
+        <div class="info-icon">📦</div>
+        <h4>Receive</h4>
+        <p>Confirm availability, price, delivery and payment directly with Sunshine.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="feature reveal">
+      <div class="feature-inner">
+        <div>
+          <div class="eyebrow">Delivery</div>
+          <h3>From Adamawa to you.</h3>
+          <p>Orders are handled from Adamawa, with delivery availability depending on your location. Send a message to confirm delivery options and fees before ordering.</p>
+          <a class="btn btn-primary" id="deliveryWhatsapp" href="#">Ask about delivery</a>
+        </div>
+        <div class="feature-image" style="background-position:65% center"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand">Sunshine's Gift Package 💞✨</div>
+  <p>Gift packages • Beauty • Aesthetics • Everyday pretty things</p>
+  <p style="margin-top:8px">© <span id="year"></span> Sunshine's Gift Package & Aesthetics</p>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <div class="modal-media">
+      <img id="modalImg" src="" alt="">
+      <button class="close" onclick="closeModal()" aria-label="Close">×</button>
+      <button class="gallery-nav gallery-prev" onclick="changeImage(-1)" aria-label="Previous image">‹</button>
+      <button class="gallery-nav gallery-next" onclick="changeImage(1)" aria-label="Next image">›</button>
+      <div class="image-count" id="imageCount">1 / 1</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-category" id="modalCategory"></div>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="dm-price">DM for price</div>
+      <button class="order-btn" id="orderBtn">Order / Enquire on WhatsApp 💬</button>
+      <div class="small-note">Send a DM to confirm the current price, availability and delivery details.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+/*
+  SUNSHINE'S CATALOGUE
+  ------------------------------------------------------------
+  IMPORTANT:
+  Product images use the exact folder-name-number JPG convention from the assets structure.
+
+  When you know the exact filenames inside each folder, replace the
+  image arrays with the real paths.
+
+  Example:
+  images: [
+    "assets/lip_oil/lip-oil-01.webp",
+    "assets/lip_oil/lip-oil-02.webp"
+  ]
+
+  You can add unlimited images/variants without changing the layout.
+*/
+
+const WHATSAPP = "2349026271656";
+
+const products = [
+  {
+    id:"lip_oil",
+    name:"Lip Oil Collection",
+    category:"Lip Oils",
+    images:[
+      "assets/lip_oil/lip_oil-01.jpg",
+      "assets/lip_oil/lip_oil-02.jpg",
+      "assets/lip_oil/lip_oil-03.jpg",
+      "assets/lip_oil/lip_oil-04.jpg",
+      "assets/lip_oil/lip_oil-05.jpg"
+    ],
+    description:"Explore Sunshine's lip oil collection. Tap through the available designs and message directly for the current price and availability."
+  },
+  {
+    id:"gift_packages",
+    name:"Gift Packages",
+    category:"Gifts",
+    images:[
+      "assets/gift_packages/gift_packages-01.jpg",
+      "assets/gift_packages/gift_packages-02.jpg",
+      "assets/gift_packages/gift_packages-03.jpg",
+      "assets/gift_packages/gift_packages-04.jpg",
+      "assets/gift_packages/gift_packages-05.jpg"
+    ],
+    description:"Beautiful gift packages prepared for special moments. Prices vary by package, so DM for the current options and price."
+  },
+  {
+    id:"mini_hand_fan",
+    name:"Mini Hand Fans",
+    category:"Aesthetics",
+    images:[
+      "assets/mini_hand_fan/mini_hand_fan-01.jpg",
+      "assets/mini_hand_fan/mini_hand_fan-02.jpg",
+      "assets/mini_hand_fan/mini_hand_fan-03.jpg"
+    ],
+    description:"Cute and practical mini hand fans. Tap through the available designs and DM for the current price."
+  },
+  {
+    id:"beauty_care_massager",
+    name:"Beauty Care Massagers",
+    category:"Beauty Care",
+    images:[
+      "assets/beauty_care_massager/beauty_care_massager-01.jpg",
+      "assets/beauty_care_massager/beauty_care_massager-02.jpg",
+      "assets/beauty_care_massager/beauty_care_massager-03.jpg"
+    ],
+    description:"Beauty-care massagers for your personal routine. DM for the current price and availability."
+  },
+  {
+    id:"beauty_facemask",
+    name:"Beauty Face Masks",
+    category:"Beauty Care",
+    images:[
+      "assets/beauty_facemask/beauty_facemask-01.jpg",
+      "assets/beauty_facemask/beauty_facemask-02.jpg",
+      "assets/beauty_facemask/beauty_facemask-03.jpg"
+    ],
+    description:"Beauty face-mask options from Sunshine's collection. DM for current price and availability."
+  },
+  {
+    id:"hair_clip",
+    name:"Hair Clips",
+    category:"Hair & Accessories",
+    images:[
+      "assets/hair_clip/hair_clip-01.jpg",
+      "assets/hair_clip/hair_clip-02.jpg",
+      "assets/hair_clip/hair_clip-03.jpg"
+    ],
+    description:"Cute hair clips and accessories for everyday styling. DM for the current price."
+  },
+  {
+    id:"hair_strecher",
+    name:"Hair Straighteners",
+    category:"Hair & Beauty",
+    images:[
+      "assets/hair_strecher/hair_strecher-01.jpg",
+      "assets/hair_strecher/hair_strecher-02.jpg",
+      "assets/hair_strecher/hair_strecher-03.jpg"
+    ],
+    description:"Hair styling tools from Sunshine's collection. DM for model availability and current price."
+  },
+  {
+    id:"lip_combo_therapy",
+    name:"Lip Combo Therapy",
+    category:"Lip Care",
+    images:[
+      "assets/lip_combo_therapy/lip_combo_therapy-01.jpg",
+      "assets/lip_combo_therapy/lip_combo_therapy-02.jpg",
+      "assets/lip_combo_therapy/lip_combo_therapy-03.jpg"
+    ],
+    description:"Lip-care combinations for a complete routine. DM for the current options and price."
+  },
+  {
+    id:"mason_jar_cup",
+    name:"Mason Jar Cups",
+    category:"Cups & Tumblers",
+    images:[
+      "assets/mason_jar_cup/mason_jar_cup-01.jpg",
+      "assets/mason_jar_cup/mason_jar_cup-02.jpg",
+      "assets/mason_jar_cup/mason_jar_cup-03.jpg"
+    ],
+    description:"Aesthetic jar-style cups with straw designs. DM for available designs and current price."
+  },
+  {
+    id:"stanley_cup",
+    name:"Stanley Cups",
+    category:"Cups & Tumblers",
+    images:[
+      "assets/stanley_cup/stanley_cup-01.jpg",
+      "assets/stanley_cup/stanley_cup-02.jpg",
+      "assets/stanley_cup/stanley_cup-03.jpg"
+    ],
+    description:"Aesthetic handled cups for everyday use. DM for available designs and current price."
+  }
+];
+
+const categories = ["All", ...new Set(products.map(p=>p.category))];
+let activeCategory = "All";
+let currentProduct = null;
+let currentImage = 0;
+
+const grid = document.getElementById("productGrid");
+const categoryBar = document.getElementById("categories");
+
+function productImage(product, index=0){
+  return product.images[index] || product.images[0];
+}
+
+function renderCategories(){
+  categoryBar.innerHTML = categories.map(c =>
+    `<button class="cat ${c===activeCategory?"active":""}" onclick="setCategory('${c.replace(/'/g,"\\'")}')">${c}</button>`
+  ).join("");
+}
+
+function renderProducts(){
+  const filtered = activeCategory==="All"
+    ? products
+    : products.filter(p=>p.category===activeCategory);
+
+  grid.innerHTML = filtered.map(p => `
+    <article class="card" onclick="openProduct('${p.id}')">
+      <img class="card-img"
+           src="${productImage(p)}"
+           alt="${p.name}"
+           loading="lazy"
+           onerror="this.style.display='none'">
+      <div class="card-overlay">
+        <div class="card-name">${p.name}</div>
+        <div class="card-meta">
+          <span class="card-price">DM for price</span>
+          <span class="card-arrow">↗</span>
+        </div>
+      </div>
+    </article>
+  `).join("");
+
+  if(!filtered.length){
+    grid.innerHTML = `<div class="empty">No products in this category yet.</div>`;
+  }
+}
+
+function setCategory(category){
+  activeCategory = category;
+  renderCategories();
+  renderProducts();
+}
+
+function openProduct(id){
+  const p = products.find(x=>x.id===id);
+  if(!p) return;
+
+  currentProduct = p;
+  currentImage = 0;
+
+  document.getElementById("modalCategory").textContent = p.category;
+  document.getElementById("modalTitle").textContent = p.name;
+  document.getElementById("modalDesc").textContent = p.description;
+  updateModalImage();
+
+  document.getElementById("modal").classList.add("show");
+  document.getElementById("modal").setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";
+}
+
+function updateModalImage(){
+  if(!currentProduct) return;
+  const img = document.getElementById("modalImg");
+  img.src = productImage(currentProduct,currentImage);
+  img.alt = `${currentProduct.name} image ${currentImage + 1}`;
+  document.getElementById("imageCount").textContent =
+    `${currentImage + 1} / ${currentProduct.images.length}`;
+
+  img.onerror = function(){
+    this.onerror = null;
+    this.style.opacity = ".35";
+  };
+}
+
+function changeImage(direction){
+  if(!currentProduct) return;
+  currentImage =
+    (currentImage + direction + currentProduct.images.length) %
+    currentProduct.images.length;
+  document.getElementById("modalImg").style.opacity = "1";
+  updateModalImage();
+}
+
+function closeModal(){
+  document.getElementById("modal").classList.remove("show");
+  document.getElementById("modal").setAttribute("aria-hidden","true");
+  document.body.style.overflow="";
+}
+
+document.getElementById("orderBtn").addEventListener("click",()=>{
+  if(!currentProduct) return;
+  const text =
+`Hello Sunshine's Gift Package 💞✨
+
+I'd like to enquire about:
+Product: ${currentProduct.name}
+Image: ${currentImage + 1}
+
+Please let me know the current price, availability and delivery details. Thank you.`;
+
+  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`,"_blank");
+});
+
+document.getElementById("heroWhatsapp").href =
+  `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Hello Sunshine's Gift Package 💞✨ I'd like to see the available products and prices.")}`;
+
+document.getElementById("deliveryWhatsapp").href =
+  `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Hello Sunshine's Gift Package 💞✨ I'd like to ask about delivery options and fees.")}`;
+
+document.getElementById("modal").addEventListener("click",e=>{
+  if(e.target.id==="modal") closeModal();
+});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape") closeModal();
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting) entry.target.classList.add("visible");
+  });
+},{threshold:.08});
+
+function observe(){
+  document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+}
+
+renderCategories();
+renderProducts();
+observe();
+</script>
+</body>
+</html>
